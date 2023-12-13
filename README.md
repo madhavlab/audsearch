@@ -18,12 +18,15 @@
 * [For creating a reference database](#reference-database)
 * [For Audio retrieval](#audio-retrieval)
 </div>
+
+<div style="background-color: #e6f7ff; padding: 10px;">
 ## Config
 ```yaml
 main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
 create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase. 
 search.yaml  # Used for parameters defined in /src/index/search.py. 
 ```
+</div>
 ## SRC
 ### Models
 ```Python 
