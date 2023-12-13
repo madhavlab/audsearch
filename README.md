@@ -1,3 +1,81 @@
+<style>
+  /* Define custom colors for sections */
+  .introduction-section {
+    background-color: #e6f7ff; /* light blue */
+    padding: 10px;
+  }
+
+  .installation-section {
+    background-color: #ccffcc; /* light green */
+    padding: 10px;
+  }
+
+  .usage-section {
+    background-color: #ffd9b3; /* light orange */
+    padding: 10px;
+  }
+
+  .contributing-section {
+    background-color: #ffcce6; /* light pink */
+    padding: 10px;
+  }
+
+  .license-section {
+    background-color: #e6ccff; /* light purple */
+    padding: 10px;
+  }
+</style>
+
+# My Project
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+<div class="introduction-section" id="introduction">
+
+## Introduction
+This is an awesome project that does amazing things.
+
+</div>
+
+<div class="installation-section" id="installation">
+
+## Installation
+To install, follow these steps...
+
+</div>
+
+<div class="usage-section" id="usage">
+
+## Usage
+Here's how you can use this project...
+
+</div>
+
+<div class="contributing-section" id="contributing">
+
+## Contributing
+If you want to contribute, please follow these guidelines...
+
+</div>
+
+<div class="license-section" id="license">
+
+## License
+This project is licensed under the XYZ License - see the [LICENSE.md](LICENSE.md) file for details.
+
+</div>
+
+
+
+
+
+
+
 <div style="background-color: #f2f2f2; padding: 10px;">
 # Title
 
@@ -18,8 +96,8 @@
 * [For creating a reference database](#reference-database)
 * [For Audio retrieval](#audio-retrieval)
 </div>
-
 <div style="background-color: #e6f7ff; padding: 10px;">
+
 ## Config
 ```yaml
 main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
@@ -28,6 +106,8 @@ search.yaml  # Used for parameters defined in /src/index/search.py.
 ```
 </div>
 ## SRC
+<div style="background-color: #ccffcc; padding: 10px;">
+
 ### Models
 ```Python 
 custom_CNN.py # DL model used as fingerprinter
@@ -49,6 +129,9 @@ similarity.py # Similarity metric used to find similarity between embeddings dur
 main.py  #Integrates all modules.
 demo.ipynb #For audio retrieval demo purposes.
 ```
+</div>
+
+
 # Command Execution 
 ## Training
 1. Update `main.yaml` file: mainly the paths corresponding to the train/validation data and noise/rir files need to be
