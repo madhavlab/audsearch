@@ -1,8 +1,8 @@
 <div style="background-color: #f2f2f2; padding: 10px;">
 
-  # Title
+  # Audio-Fingerprinting 
 
-## Layout
+## Table of contents
 ----------------------------------------------------------------------
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
