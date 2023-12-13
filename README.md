@@ -1,3 +1,4 @@
+<div style="background-color: #f2f2f2; padding: 10px;">
 # Title
 
 ## Layout
@@ -16,7 +17,7 @@
 * [For Training the model](#training)
 * [For creating a reference database](#reference-database)
 * [For Audio retrieval](#audio-retrieval)
-
+</div>
 ## Config
 ```yaml
 main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
