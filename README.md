@@ -63,19 +63,25 @@ demo.ipynb #For audio retrieval demo purposes.
 
 # Command Execution 
 ## Training
-1. Update `main.yaml` file: mainly the paths corresponding to the train/validation data and noise/rir files need to be
-   specified.
-2. Execute the command from the src/ directory: `python main.py --subdir <repository name> --config <main.yaml
-   path> -d <PB directory path>`. <repository name> will be created inside PB/checkpoints/ repository
-3. To resume training from a checkpoint execute command from the src/ directory: `python main.py --subdir <repository name> -c <checkpoint(*.ckpt)
+1. To initiate training, update the `main.yaml` file, focusing on specifying paths for training/validation data and noise/RIR files. Ensure that the paths are correctly set.
+2. After updating the configuration file, execute the following command from the src/ directory: `python main.py --subdir <repository name> --config <main.yaml
    path> -d <PB directory path>`
+3. This command will create a directory inside PB/checkpoints/ with the specified repository name.
+4. If you need to resume training from a checkpoint, use the following command from the src/ directory: `python main.py --subdir <repository name> -c <checkpoint(*.ckpt)
+   path> -d <PB directory path>`
+5. Make sure to replace <repository name>, <main.yaml path>, and <PB directory path> with the actual values. 
 ---------------------------------------------------------------------------------------------------------------------
 ## Creating reference Database
-1. Update `create_refdbase.yaml` file: mainly the patch corresponding to reference audio files need to be specified
-2. Execute the command from index/ directory: `python create_refdbase.py --config <create_refdbase.yaml path>`
+1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
+2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py --config <create_refdbase.yaml path>`
+3. Ensure that you replace `<create_refdbase.yaml path>` with the actual path to your configuration file.
+4. This command will initiate the process of creating a reference database based on the specified configuration.
 --------------------------------------------------------------------------------------------------------------------
 ## Audio Retrieval
-1. Update `search.yaml` file: Specify the fingerprints database and metadata paths and model weights path.
-2. Execute the command from index/ directory: `python search.py --config <search.yaml path>`. For now, it will perform
-   audio retrieval for 10 noisy query files of length 5s for demo purposes.
+1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, ensure that you specify the paths for the fingerprints database, metadata, and model weights.
+2. After updating the configuration file, execute the following command from the `index/` directory: `python search.py --config <search.yaml path>`
+3. In this demonstration, the command will perform audio retrieval for 10 noisy query files, each with a length of 5 seconds.
+4. Make sure to replace `<search.yaml path>` with the actual path to your configuration file.
+5. This command will initiate the audio retrieval process based on the configured settings for a demonstration.
+   
 ------------------------------------------------------------------------------------------------------------------------------
