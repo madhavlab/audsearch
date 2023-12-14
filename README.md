@@ -14,7 +14,7 @@
 * **main.py**: Integrates all the above modules. This is called for training the model
 * Command Execution
 * [For Training the model](#training)
-* [For creating a reference database](#reference-database)
+* [For creating a reference database](#creating-reference-database)
 * [For Audio retrieval](#audio-retrieval)
 </div>
 
