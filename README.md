@@ -4,6 +4,7 @@
 
 ## Table of contents
 ----------------------------------------------------------------------
+* [**System Requirments**](#requirement): Contains system requirments
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
@@ -19,6 +20,17 @@
 </div>
 
 ---------------------------------------------------------------------------------------------------------------------------
+<div style="background-color: #e6f7ff; padding: 10px;">
+
+## Requirments
+### Minimum
+* NVIDIA GPU with CUDA 10+
+* 25 GB of free SSD space for mini-dataset experiments
+* Ask anup about further requirements----if the req exceeds then we can create a drop-down option here
+</div>
+
+
+--------------------------------------------------------------------------------------------------------------------------
 <div style="background-color: #e6f7ff; padding: 10px;">
 
 ## Config
