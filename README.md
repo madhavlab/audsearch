@@ -2,9 +2,9 @@
 
   # Audio-Fingerprinting 
 
-## Table of contents
+## Table of contents ///Instead of this we can write about waala part---info of this
 ----------------------------------------------------------------------
-* [**System Requirments**](#requirments): Contains system requirments
+* [**System Requirments**](#requirements): Contains system requirements
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
@@ -22,15 +22,31 @@
 ---------------------------------------------------------------------------------------------------------------------------
 <div style="background-color: #e6f7ff; padding: 10px;">
 
-## Requirments
+## Requirements
 ### Minimum
 * NVIDIA GPU with CUDA 10+
 * 25 GB of free SSD space for mini-dataset experiments
 * Ask anup about further requirements----if the req exceeds then we can create a drop-down option here
 </div>
 
+---------------------------------------------------------------------------------------------------------------------------
+<div style="background-color: #e6f7ff; padding: 10px;">
+
+## Installation
+### Install packages for the QbE system via the following commands:
+1. <conda create -n "PB" python=3.7>
+2. <pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url
+   https://download.pytorch.org/whl/cu117>
+3. <pip install pytorch-lightning==1.9.5>
+4. <pip install natsort>
+5. <pip install scipy>
+6. <pip install matplotlib>
+7. <pip install faiss>
+
+</div>
 
 --------------------------------------------------------------------------------------------------------------------------
+
 <div style="background-color: #e6f7ff; padding: 10px;">
 
 ## Config
