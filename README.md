@@ -5,6 +5,7 @@
 ## Table of contents ///Instead of this we can write about waala part---info of this
 ----------------------------------------------------------------------
 * [**System Requirments**](#requirements): Contains system requirements
+* [**Installation**](#Installation)
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
@@ -34,14 +35,34 @@
 
 ## Installation
 ### Install packages for the QbE system via the following commands:
-1. <conda create -n "PB" python=3.7>
-2. <pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url
-   https://download.pytorch.org/whl/cu117>
-3. <pip install pytorch-lightning==1.9.5>
-4. <pip install natsort>
-5. <pip install scipy>
-6. <pip install matplotlib>
-7. <pip install faiss>
+#### Create a Conda environment named "PB" with Python 3.7:
+   ```python
+   conda create -n PB python=3.7
+```
+1. Install specific versions of PyTorch and torchvision with torchaudio:
+ ```python
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+ ```
+2. Install PyTorch Lightning version 1.9.5:
+    ```python
+   pip install pytorch-lightning==1.9.5
+    ```
+3. Install the natsort library:
+    ```python
+   pip install natsort
+    ```
+4. Install the scipy library:
+    ```python
+   pip install scipy
+    ```
+5. Install the matplotlib library:
+    ```python
+   pip install matplotlib
+    ```
+6. Install the faiss library:
+    ```python
+   pip install faiss
+    ```
 
 </div>
 
