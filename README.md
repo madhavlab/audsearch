@@ -5,7 +5,7 @@
 ## Table of contents ///Instead of this we can write about waala part---info of this
 ----------------------------------------------------------------------
 * [**System Requirments**](#requirements): Contains system requirements
-* [**Installation**](#Installation)
+* [**Installation**](#installation)
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
@@ -132,3 +132,8 @@ demo.ipynb #For audio retrieval demo purposes.
 5. This command will initiate the audio retrieval process based on the configured settings for a demonstration.
    
 ------------------------------------------------------------------------------------------------------------------------------
+## Dataset
+
+You can access the dataset on Kaggle [here](https://www.kaggle.com/dataset-url).
+It is a free Music Archive with Large number of Genres for Music Analysis
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
