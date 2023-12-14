@@ -4,7 +4,7 @@
 
 ## Table of contents
 ----------------------------------------------------------------------
-* [**System Requirments**](#requirements): Contains system requirments
+* [**System Requirments**](#requirments): Contains system requirments
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
