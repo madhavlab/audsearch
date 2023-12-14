@@ -12,9 +12,7 @@
   * [**Train**](#train): To train the model
   * [**Utils**](#utils): Helping modules used by modules in Index, Train. Also used by the main.py file
 * **main.py**: Integrates all the above modules. This is called for training the model
-------------------------------------------------------------------------
-## Command Execution
-
+* Command Execution
 * [For Training the model](#training)
 * [For creating a reference database](#reference-database)
 * [For Audio retrieval](#audio-retrieval)
