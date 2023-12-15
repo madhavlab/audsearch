@@ -1,0 +1,4 @@
+metadata: "/scratch/sanup/PB_optimized/checkpoints/Ours/temp:0.1_bsz:256_lr:0.0001_seg:0.95_emb:128/checkpoints/METADATA.pkl"
+files: "/scratch/sanup/PB_optimized/checkpoints/Ours/temp:0.1_bsz:256_lr:0.0001_seg:0.95_emb:128/checkpoints/FILES.pkl"
+emb_db: "/scratch/sanup/PB_optimized/checkpoints/Ours/temp:0.1_bsz:256_lr:0.0001_seg:0.95_emb:128/checkpoints/EMB_DB.pkl"
+checkpoint: "/scratch/sanup/PB_optimized/checkpoints/Ours/temp:0.1_bsz:256_lr:0.0001_seg:0.95_emb:128/checkpoints/epoch=117-valid_loss=0.09-train_loss=0.07-valid_top1_acc=1.00--valid_top5_acc=1.00.ckpt"

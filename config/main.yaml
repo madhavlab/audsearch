@@ -1,0 +1,50 @@
+#speech: CDFGPQRT
+seed: 1
+
+#dataset
+train_clean: 
+ "/scratch/sanup/data/PB/train/": "wav"
+train_noise: ["/scratch/sanup/data/distortions/RIRS_NOISES/pointsource_noises", "wav"] 
+train_rir: ["/scratch/sanup/data/distortions/RIRS_NOISES/real_rirs_isotropic_noises", "wav"]
+train_distort_probs: null
+
+valid_clean:
+ "/scratch/sanup/data/PB/test1/": "wav"
+valid_noise: ["/scratch/sanup/data/distortions/noise_16k", "wav"]
+valid_rir: ["/scratch/sanup/data/distortions/rir_16k", "wav"]
+valid_distort_probs: null
+
+#dataloader
+fs: 16000
+seglen: 0.95
+powerthresh: 0.0001
+audiofeat: "logmelspectrogram"
+audiofeat_params: {"n_fft":512, "hop_length":160,"n_mels":64}
+max_offset: 0.04
+snr_range: [0,25]
+specaug: null #{'num_mask': 2, 'freq_max_width': 0.1, 'time_max_width': 0.1}
+load_workers: 30
+batchsize: 256
+
+#SSL framework
+similarity: "cosine similarity"
+temperature: 0.1
+emb_dims: 128 
+encoder: "Ours" # "Baseline"
+d: 128   # uncomment when using ours
+h: 6144 #change to 6144 when using ours and 1024 for baseline
+u: 32
+# T: 96 #comment when using ours system
+
+#Training params
+lr: 0.0001
+optimizer: "Adam"
+weight_decay: null
+lr_scheduler: {"apply": False, "max_lr": 0.005, "epochs": 200, "div_factor": 10, "final_div_factor": 1, "pct_start": 0.1}
+
+
+world_size: 1
+checkpoint: null
+
+
+
