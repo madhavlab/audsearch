@@ -1,0 +1,39 @@
+audiopath:
+ "/home/anup/PARAMSANAGANK_backup/data/PB/train/C1/": "wav"
+ckpt_path: "/home/anup/PB_imp_files/aa/epoch=117-valid_loss=0.09-train_loss=0.07-valid_top1_acc=1.00--valid_top5_acc=1.00.ckpt"
+audiofeat_params: {"n_fft":512, "hop_length":160,"n_mels":64}
+fs: 16000
+hop: 100
+seglen: 960 #keep this fixed. should not be changed
+fp_dims: 128
+
+append_dbase: True
+
+save_fp_db: ["/home/anup/PB_imp_files/aa", "EMB_DB_C.pkl",  "FILES_C.pkl", "METADATA_C.pkl"]
+
+# indexing params
+
+index_type: "ivfpq"
+
+# if IVF+Flat/PQ used
+centroids: 100
+num_codebooks: 8
+codewords_bit: 8
+nprobe: 100
+
+# if IVF+PQR used
+num_codebooks_refine: 16
+codewords_bit_refine: 8
+
+# if HNSW used
+knn: 20
+efconstruct: 10
+efsearch: 10
+
+# Read-write options for index
+load_index_path: "/home/anup/2022_PB_AFP-main/src/index/ivfpq.index" #set path of <*.index> file if index already exists. Use this when <append_dbase> is set to True
+save_index_path: "/home/anup/2022_PB_AFP-main/src/index/ivfpq.index" 
+
+# search on GPU
+use_gpu: False
+gpu_device: 0

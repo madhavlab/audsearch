@@ -1,0 +1,14 @@
+# database + other relavant files paths
+metadata: "/home/anup/PB_imp_files/aa/METADATA_C.pkl"
+files: "/home/anup/PB_imp_files/aa/FILES_C.pkl"
+emb_db: "/home/anup/PB_imp_files/aa/EMB_DB_C.pkl"
+checkpoint: "/home/anup/PB_imp_files/aa/epoch=117-valid_loss=0.09-train_loss=0.07-valid_top1_acc=1.00--valid_top5_acc=1.00.ckpt"
+
+nprobe: 100
+
+# Read-write options for index
+load_index_path: "/home/anup/2022_PB_AFP-main/src/index/ivfpq.index" 
+
+# search on GPU
+use_gpu: False
+gpu_device: 0
