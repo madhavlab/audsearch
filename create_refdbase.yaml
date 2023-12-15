@@ -1,0 +1,8 @@
+audiopath:
+ "/scratch/sanup/data/PB/train/B/": "wav"
+ckpt_path: "/scratch/sanup/PB_optimized/checkpoints/Ours/temp:0.1_bsz:256_lr:0.0001_seg:0.95_emb:128/checkpoints/epoch=117-valid_loss=0.09-train_loss=0.07-valid_top1_acc=1.00--valid_top5_acc=1.00.ckpt"
+audiofeat_params: {"n_fft":512, "hop_length":160,"n_mels":64}
+fs: 16000
+hop: 100
+seglen: 960 #keep this fixed. should not be changed
+fp_dims: 128
