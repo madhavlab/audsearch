@@ -5,7 +5,6 @@
 ## Table of contents ///Instead of this we can write about waala part---info of this
 ----------------------------------------------------------------------
 * [**System Requirments**](#requirements): Contains system requirements
-* [**Installation**](#installation)
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
@@ -14,6 +13,7 @@
   * [**Train**](#train): To train the model
   * [**Utils**](#utils): Helping modules used by modules in Index, Train. Also used by the main.py file
 * **main.py**: Integrates all the above modules. This is called for training the model
+* [**Installation**](#installation)
 * Command Execution
 * [For Training the model](#training)
 * [For creating a reference database](#creating-reference-database)
@@ -29,27 +29,6 @@
 * 25 GB of free SSD space for mini-dataset experiments
 </div>
 
----------------------------------------------------------------------------------------------------------------------------
-<div style="background-color: #e6f7ff; padding: 10px;">
-
-## Installation
-### Install packages for the QbE system via the following commands:
-#### Create a Conda environment named "PB" with Python 3.7:
-   ```python
-   conda create -n PB python=3.7
-```
- ```python
-   #Install specific versions of PyTorch and torch-vision with torch audio
-   pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
-   #Install PyTorch Lightning version 1.9.5:
-   pip install pytorch-lightning==1.9.5
-   #Install other libraries
-   pip install natsort
-   pip install scipy
-   pip install matplotlib 
-   pip install faiss
-  ```
-</div>
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -90,6 +69,28 @@ similarity.py # Similarity metric used to find similarity between embeddings dur
 main.py  #Integrates all modules.
 demo.ipynb #For audio retrieval demo purposes.
 ```
+</div>
+
+---------------------------------------------------------------------------------------------------------------------------
+<div style="background-color: #e6f7ff; padding: 10px;">
+
+## Installation
+### Install packages for the QbE system via the following commands:
+#### Create a Conda environment named "PB" with Python 3.7:
+   ```python
+   conda create -n PB python=3.7
+```
+ ```python
+   #Install specific versions of PyTorch and torch-vision with torch audio
+   pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+   #Install PyTorch Lightning version 1.9.5:
+   pip install pytorch-lightning==1.9.5
+   #Install other libraries
+   pip install natsort
+   pip install scipy
+   pip install matplotlib 
+   pip install faiss
+  ```
 </div>
 
 ------------------------------------------------------------------------------------------------------------------------------------
