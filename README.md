@@ -1,8 +1,8 @@
 <div style="background-color: #f2f2f2; padding: 10px;">
 
-  # Audio-Fingerprinting 
+  # Audio-Search
 
-## Table of contents ///Instead of this we can write about waala part---info of this
+### Table of contents 
 ----------------------------------------------------------------------
 * [**System Requirments**](#requirements): Contains system requirements
 * [**Config**](#config): Contains configuration files (.yaml)  
@@ -18,6 +18,7 @@
 * [For Training the model](#training)
 * [For creating a reference database](#creating-reference-database)
 * [For Audio retrieval](#audio-retrieval)
+* [**Dataset**](#dataset)
 </div>
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -95,8 +96,8 @@ demo.ipynb #For audio retrieval demo purposes.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-# Command Execution 
-## Training
+## Command Execution 
+### Training
 1. To initiate training, update the `main.yaml` file, focusing on specifying paths for training/validation data and noise/RIR files. Ensure that the paths are correctly set.
 2. After updating the configuration file, execute the following command from the src/ directory: `python main.py --subdir <repository name> --config <main.yaml
    path> -d <PB directory path>`
@@ -105,13 +106,13 @@ demo.ipynb #For audio retrieval demo purposes.
    path> -d <PB directory path>`
 5. Make sure to replace <repository name>, <main.yaml path>, and <PB directory path> with the actual values. 
 ---------------------------------------------------------------------------------------------------------------------
-## Creating reference Database
+### Creating reference Database
 1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py --config <create_refdbase.yaml path>`
 3. Ensure that you replace `<create_refdbase.yaml path>` with the actual path to your configuration file.
 4. This command will initiate creating a reference database based on the specified configuration.
 --------------------------------------------------------------------------------------------------------------------
-## Audio Retrieval
+### Audio Retrieval
 1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, please make sure that you specify the paths for the fingerprints database, metadata, and model weights.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python search.py --config <search.yaml path>`
 3. In this demonstration, the command will perform audio retrieval for 10 noisy query files, each with a length of 5 seconds.
