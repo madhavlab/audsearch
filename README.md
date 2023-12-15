@@ -49,8 +49,7 @@
    pip install scipy
    pip install matplotlib 
    pip install faiss
-    ```
-
+  ```
 </div>
 
 --------------------------------------------------------------------------------------------------------------------------
@@ -63,6 +62,7 @@ main.yaml  # Used for parameters defined in main.py . This contains all the impo
 create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase. 
 search.yaml  # Used for parameters defined in /src/index/search.py. 
 ```
+
 </div>
 
 --------------------------------------------------------------------------------------------
