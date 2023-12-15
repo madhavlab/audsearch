@@ -109,10 +109,10 @@ demo.ipynb #For audio retrieval demo purposes.
 1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py --config <create_refdbase.yaml path>`
 3. Ensure that you replace `<create_refdbase.yaml path>` with the actual path to your configuration file.
-4. This command will initiate the process of creating a reference database based on the specified configuration.
+4. This command will initiate creating a reference database based on the specified configuration.
 --------------------------------------------------------------------------------------------------------------------
 ## Audio Retrieval
-1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, ensure that you specify the paths for the fingerprints database, metadata, and model weights.
+1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, please make sure that you specify the paths for the fingerprints database, metadata, and model weights.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python search.py --config <search.yaml path>`
 3. In this demonstration, the command will perform audio retrieval for 10 noisy query files, each with a length of 5 seconds.
 4. Make sure to replace `<search.yaml path>` with the actual path to your configuration file.
@@ -120,7 +120,7 @@ demo.ipynb #For audio retrieval demo purposes.
    
 ------------------------------------------------------------------------------------------------------------------------------
 ## Dataset
-
 You can access the dataset on Kaggle [here](https://www.kaggle.com/dataset-url).
-It is a free Music Archive with Large number of Genres for Music Analysis
+It is a free Music Archive with a Large number of Genres for Music Analysis
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
