@@ -1,0 +1,6 @@
+/* Main content container */
+.document {
+    max-width: 2500px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content by setting left and right margins to 'auto' */
+    padding: 10px; /* Add padding around the content */
+}

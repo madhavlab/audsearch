@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="English">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to audsearch&#39;s documentation! &#8212; audsearch 0.10.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="bodywrapper">
+  
+              <!-- Replace this div with your README content -->
+              <div style="background-color: #f2f2f2; padding: 10px;">
+
+                 
+                <h1 id="audio-search">Audio-Search</h1>
+                <h3 id="table-of-contents">Table of contents</h3>
+                <hr>
+                <ul>
+                    <li><a href="#requirements"><strong>System Requirments</strong></a>: Contains system requirements</li>
+                    <li><a href="#config"><strong>Config</strong></a>: Contains configuration files (.yaml)</li>
+                    <li><strong>Checkpoints</strong>: To store model weights during training</li>
+                    <li><strong>SRC</strong>: Contains all modules
+                        <ul>
+                            <li><a href="#models"><strong>Models</strong></a>: To define DL models</li>
+                            <li><strong>Index</strong>: To create a reference database of fingerprints and perform audio retrieval</li>
+                            <li><a href="#train"><strong>Train</strong></a>: To train the model</li>
+                            <li><a href="#utils"><strong>Utils</strong></a>: Helping modules used by modules in Index, Train. Also used by the main.py file</li>
+                        </ul>
+                    </li>
+                    <li><strong>main.py</strong>: Integrates all the above modules. This is called for training the model</li>
+                    <li><a href="#installation"><strong>Installation</strong></a></li>
+                    <li>Command Execution</li>
+                    <li><a href="#training">For Training the model</a></li>
+                    <li><a href="#creating-reference-database">For creating a reference database</a></li>
+                    <li><a href="#audio-retrieval">For Audio retrieval</a></li>
+                    <li><a href="#dataset"><strong>Dataset</strong></a></li>
+                </ul>
+                <hr>
+            
+                <div style="background-color: #e6f7ff; padding: 10px;">
+            
+                    <h2 id="requirements">Requirements</h2>
+                    <h3 id="minimum">Minimum</h3>
+                    <ul>
+                        <li>NVIDIA GPU with CUDA 10+</li>
+                        <li>25 GB of free SSD space for mini-dataset experiments</li>
+                    </ul>
+                    <hr>
+                    <h2 id="config">Config</h2>
+                    <pre><code class="language-yaml">main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
+            create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase. 
+            search.yaml  # Used for parameters defined in /src/index/search.py. 
+            </code></pre>
+                </div>
+            
+                <hr>
+                <h2 id="src">SRC</h2>
+                <hr>
+                <div style="background-color: #ccffcc; padding: 10px;">
+            
+                    <h3 id="models">Models</h3>
+                    <pre><code class="language-Python">custom_CNN.py # DL model used as fingerprinter
+            feedforward.py # projection layer (NN architecture)
+            </code></pre>
+                    <h3 id="train">Train</h3>
+                    <pre><code class="language-Python">contrastive_learning.py # Pytorch Lightning module for training the model.
+            </code></pre>
+                    <h3 id="utils">Utils</h3>
+                    <pre><code class="language-Python">audio.py #Reads and preprocess the audio files.
+            callbacks.py # Used during training to track progress
+            dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
+            dataset.py # Custom dataset class compatible with our model training.
+            features.py # To transform raw audio into time-frequency representation.
+            losses.py # Loss metric defined used for training.
+            similarity.py # Similarity metric used to find similarity between embeddings during training.
+            main.py  #Integrates all modules.
+            demo.ipynb #For audio retrieval demo purposes.
+            </code></pre>
+                </div>
+            
+                <hr>
+                <div style="background-color: #e6f7ff; padding: 10px;">
+            
+                    <h2 id="installation">Installation</h2>
+                    <h3 id="install-packages-for-the-qbe-system-via-the-following-commands">Install packages for the QbE system via the following commands:</h3>
+                    <h4 id="create-a-conda-environment-named-pb-with-python-37">Create a Conda environment named &quot;PB&quot; with Python 3.7:</h4>
+                    <pre><code class="language-python">conda create -n PB python=3.7
+            </code></pre>
+                    <pre><code class="language-python">  #Install specific versions of PyTorch and torch-vision with torch audio
+              pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+              #Install PyTorch Lightning version 1.9.5:
+              pip install pytorch-lightning==1.9.5
+              #Install other libraries
+              pip install natsort
+              pip install scipy
+              pip install matplotlib 
+              pip install faiss
+            </code></pre>
+                </div>
+            
+                <hr>
+                <h2 id="command-execution">Command Execution</h2>
+                <h3 id="training">Training</h3>
+                <ol>
+                    <li>To initiate training, update the <code>main.yaml</code> file, focusing on specifying paths for training/validation data and noise/RIR files. Ensure that the paths are correctly set.</li>
+                    <li>After updating the configuration file, execute the following command from the src/ directory: <code>python main.py --subdir &lt;repository name&gt; --config &lt;main.yaml path&gt; -d &lt;PB directory path&gt;</code></li>
+                    <li>This command will create a directory inside PB/checkpoints/ with the specified repository name.</li>
+                    <li>If you need to resume training from a checkpoint, use the following command from the src/ directory: <code>python main.py --subdir &lt;repository name&gt; -c &lt;checkpoint(*.ckpt) path&gt; -d &lt;PB directory path&gt;</code></li>
+                    <li>Make sure to replace <repository name>, &lt;main.yaml path&gt;, and <PB directory path> with the actual values.</li>
+                </ol>
+                <hr>
+                <h3 id="creating-reference-database">Creating reference Database</h3>
+                <ol>
+                    <li>To create a reference database, first, update the <code>create_refdbase.yaml</code> file, focusing on specifying the path corresponding to the reference audio files.</li>
+                    <li>After updating the configuration file, execute the following command from the <code>index/</code> directory: <code>python create_refdbase.py --config &lt;create_refdbase.yaml path&gt;</code></li>
+                    <li>Ensure that you replace <code>&lt;create_refdbase.yaml path&gt;</code> with the actual path to your configuration file.</li>
+                    <li>This command will initiate creating a reference database based on the specified configuration.</li>
+                </ol>
+                <hr>
+                <h3 id="audio-retrieval">Audio Retrieval</h3>
+                <ol>
+                    <li>To perform audio retrieval, start by updating the <code>search.yaml file</code>. Specifically, please make sure that you specify the paths for the fingerprints database, metadata, and model weights.</li>
+                    <li>After updating the configuration file, execute the following command from the <code>index/</code> directory: <code>python search.py --config &lt;search.yaml path&gt;</code></li>
+                    <li>In this demonstration, the command will perform audio retrieval for 10 noisy query files, each with a length of 5 seconds.</li>
+                    <li>Make sure to replace <code>&lt;search.yaml path&gt;</code> with the actual path to your configuration file.</li>
+                    <li>This command will initiate the audio retrieval process based on the configured settings for a demonstration.</li>
+                </ol>
+                <hr>
+                <h2 id="dataset">Dataset</h2>
+                <p>You can access the dataset on Kaggle <a href="https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium">here</a>.
+                    It is a free Music Archive with a Large number of Genres for Music Analysis</p>
+                <hr>
+            
+            </div>
+            
+              <!-- End of README content -->
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">audsearch</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Anup Singh, Prof Vipul Arora.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
