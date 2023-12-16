@@ -1,11 +1,10 @@
 <div style="background-color: #f2f2f2; padding: 10px;">
 
-  # Audio-Fingerprinting 
+  # Audio-Search
 
-## Table of contents ///Instead of this we can write about waala part---info of this
+### Table of contents 
 ----------------------------------------------------------------------
 * [**System Requirments**](#requirements): Contains system requirements
-* [**Installation**](#installation)
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
@@ -14,10 +13,12 @@
   * [**Train**](#train): To train the model
   * [**Utils**](#utils): Helping modules used by modules in Index, Train. Also used by the main.py file
 * **main.py**: Integrates all the above modules. This is called for training the model
+* [**Installation**](#installation)
 * Command Execution
 * [For Training the model](#training)
 * [For creating a reference database](#creating-reference-database)
 * [For Audio retrieval](#audio-retrieval)
+* [**Dataset**](#dataset)
 </div>
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -27,44 +28,8 @@
 ### Minimum
 * NVIDIA GPU with CUDA 10+
 * 25 GB of free SSD space for mini-dataset experiments
-* Ask anup about further requirements----if the req exceeds then we can create a drop-down option here
 </div>
 
----------------------------------------------------------------------------------------------------------------------------
-<div style="background-color: #e6f7ff; padding: 10px;">
-
-## Installation
-### Install packages for the QbE system via the following commands:
-#### Create a Conda environment named "PB" with Python 3.7:
-   ```python
-   conda create -n PB python=3.7
-```
-1. Install specific versions of PyTorch and torchvision with torchaudio:
- ```python
-pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
- ```
-2. Install PyTorch Lightning version 1.9.5:
-    ```python
-   pip install pytorch-lightning==1.9.5
-    ```
-3. Install the natsort library:
-    ```python
-   pip install natsort
-    ```
-4. Install the scipy library:
-    ```python
-   pip install scipy
-    ```
-5. Install the matplotlib library:
-    ```python
-   pip install matplotlib
-    ```
-6. Install the faiss library:
-    ```python
-   pip install faiss
-    ```
-
-</div>
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -76,6 +41,7 @@ main.yaml  # Used for parameters defined in main.py . This contains all the impo
 create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase. 
 search.yaml  # Used for parameters defined in /src/index/search.py. 
 ```
+
 </div>
 
 --------------------------------------------------------------------------------------------
@@ -106,10 +72,32 @@ demo.ipynb #For audio retrieval demo purposes.
 ```
 </div>
 
+---------------------------------------------------------------------------------------------------------------------------
+<div style="background-color: #e6f7ff; padding: 10px;">
+
+## Installation
+### Install packages for the QbE system via the following commands:
+#### Create a Conda environment named "PB" with Python 3.7:
+   ```python
+   conda create -n PB python=3.7
+```
+ ```python
+   #Install specific versions of PyTorch and torch-vision with torch audio
+   pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+   #Install PyTorch Lightning version 1.9.5:
+   pip install pytorch-lightning==1.9.5
+   #Install other libraries
+   pip install natsort
+   pip install scipy
+   pip install matplotlib 
+   pip install faiss
+  ```
+</div>
+
 ------------------------------------------------------------------------------------------------------------------------------------
 
-# Command Execution 
-## Training
+## Command Execution 
+### Training
 1. To initiate training, update the `main.yaml` file, focusing on specifying paths for training/validation data and noise/RIR files. Ensure that the paths are correctly set.
 2. After updating the configuration file, execute the following command from the src/ directory: `python main.py --subdir <repository name> --config <main.yaml
    path> -d <PB directory path>`
@@ -118,14 +106,14 @@ demo.ipynb #For audio retrieval demo purposes.
    path> -d <PB directory path>`
 5. Make sure to replace <repository name>, <main.yaml path>, and <PB directory path> with the actual values. 
 ---------------------------------------------------------------------------------------------------------------------
-## Creating reference Database
+### Creating reference Database
 1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py --config <create_refdbase.yaml path>`
 3. Ensure that you replace `<create_refdbase.yaml path>` with the actual path to your configuration file.
-4. This command will initiate the process of creating a reference database based on the specified configuration.
+4. This command will initiate creating a reference database based on the specified configuration.
 --------------------------------------------------------------------------------------------------------------------
-## Audio Retrieval
-1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, ensure that you specify the paths for the fingerprints database, metadata, and model weights.
+### Audio Retrieval
+1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, please make sure that you specify the paths for the fingerprints database, metadata, and model weights.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python search.py --config <search.yaml path>`
 3. In this demonstration, the command will perform audio retrieval for 10 noisy query files, each with a length of 5 seconds.
 4. Make sure to replace `<search.yaml path>` with the actual path to your configuration file.
@@ -133,7 +121,7 @@ demo.ipynb #For audio retrieval demo purposes.
    
 ------------------------------------------------------------------------------------------------------------------------------
 ## Dataset
+You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium).
+It is a free Music Archive with a Large number of Genres for Music Analysis
 
-You can access the dataset on Kaggle [here](https://www.kaggle.com/dataset-url).
-It is a free Music Archive with Large number of Genres for Music Analysis
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
