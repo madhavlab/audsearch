@@ -418,6 +418,12 @@ table caption span.caption-number {
 }
 
 table caption span.caption-text {
+    table.contentstable span.caption-text {
+        color: #333; /* Set the text color to dark gray */
+        font-style: italic; /* Make the text italic */
+        /* Add more styles as needed */
+    }
+    
 }
 
 table.docutils td, table.docutils th {
@@ -470,7 +476,11 @@ figcaption span.caption-number {
 
 div.figure p.caption span.caption-text,
 figcaption span.caption-text {
+    font-weight: bold; /* Set the text to bold */
+    color: #0066cc; /* Set the text color to a shade of blue */
+    /* Add more styles as needed */
 }
+
 
 /* -- field list styles ----------------------------------------------------- */
 
@@ -859,7 +869,11 @@ div.code-block-caption span.caption-number {
 }
 
 div.code-block-caption span.caption-text {
+    font-style: italic; /* Set the text to italic */
+    color: #ff6600; /* Set the text color to a shade of orange */
+    /* Add more styles as needed */
 }
+
 
 div.literal-block-wrapper {
     margin: 1em 0;
