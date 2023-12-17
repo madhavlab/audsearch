@@ -11,7 +11,7 @@ from pytorch_lightning import Trainer
 from pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor
 
 from utils import SSLDataset, ContrastiveLoss, CosineSimilarity, BiLinearSimilarity, MyCallBack
-from models import CustomArch7, FpNetwork, ProjectionHead1
+from models import CustomArch7, ProjectionHead1
 from train import ContrastiveModel
 
 # os.environ["CUDA_VISIBLE_DEVICES"]="1"
