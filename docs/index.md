@@ -1,7 +1,4 @@
----
-layout: default
-title: Home
----
+
 <div style="background-color: #f2f2f2; padding: 10px;">
 
   # Audio-Search
