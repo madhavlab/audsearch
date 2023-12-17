@@ -91,6 +91,7 @@ demo.ipynb #For audio retrieval demo purposes.
    pip install scipy
    pip install matplotlib 
    pip install faiss
+   pip install tensorboard
   ```
 </div>
 
