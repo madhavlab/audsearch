@@ -3,16 +3,6 @@ layout: default
 title: Home
 ---
 
-# My Documentation
-
-Welcome to my documentation!
-
-## Getting Started
-
-This is an example documentation page.
-
-  Welcome to audsearch's documentation! — audsearch 0.10.1 documentation      
-
 Audio-Search
 ============
 
@@ -151,20 +141,5 @@ You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/imsp
 
 * * *
 
-[audsearch](#)
-==============
 
-### Navigation
-
-### Related Topics
-
-*   [Documentation overview](#)
-    
-
-### Quick search
-
- 
-
-document.getElementById('searchbox').style.display = "block"
-
-©2023, Anup Singh, Prof Vipul Arora. | Powered by [Sphinx 5.0.2](http://sphinx-doc.org/) & [Alabaster 0.7.12](https://github.com/bitprophet/alabaster) | [Page source](_sources/index.rst.txt)
+©2023, Anup Singh, Prof Vipul Arora. | [Page source](_sources/index.rst.txt)
