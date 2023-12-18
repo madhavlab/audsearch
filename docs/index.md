@@ -2,12 +2,28 @@
 layout: default
 title: Home
 ---
+
 <style>
   body {
-    max-width: 2000px; /* Adjust the value based on your preference */
+    max-width: 1800px; /* Adjust the value based on your preference */
     margin: 0 auto; /* Center the content */
+    font-family: "Arial", sans-serif; /* Change the font family */
+    font-size: 16px; /* Set the base font size */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust the font size for h1 headers */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Adjust the font size for h2 headers */
+  }
+
+  p {
+    font-size: 18px; /* Adjust the font size for paragraphs */
   }
 </style>
+
 
 Audio-Search
 ============
@@ -34,7 +50,7 @@ Audio-Search
 
 * * *
 
-Requirements
+**Requirements**
 ------------
 
 ### Minimum
@@ -44,7 +60,7 @@ Requirements
 
 * * *
 
-Config
+**Config**
 ------
 
     main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
@@ -54,7 +70,7 @@ Config
 
 * * *
 
-SRC
+## SRC
 ---
 
 * * *
@@ -140,7 +156,7 @@ Command Execution
 
 * * *
 
-Dataset
+## Dataset
 -------
 
 You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium). It is a free Music Archive with a Large number of Genres for Music Analysis
