@@ -4,7 +4,7 @@ title: Home
 ---
 <style>
   body {
-    max-width: 1200px; /* Adjust the value based on your preference */
+    max-width: 2000px; /* Adjust the value based on your preference */
     margin: 0 auto; /* Center the content */
   }
 </style>
@@ -148,4 +148,4 @@ You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/imsp
 * * *
 
 
-©2023, Anup Singh, Prof Vipul Arora. | [Page source](_sources/index.rst.txt)
+© 2023, Anup Singh and Prof Vipul Arora. All rights reserved. | [Page source](_sources/index.rst.txt)
