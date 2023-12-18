@@ -42,8 +42,8 @@ Config
 ------
 
     main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
-                create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase. 
-                search.yaml  # Used for parameters defined in /src/index/search.py. 
+    create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase. 
+    search.yaml  # Used for parameters defined in /src/index/search.py. 
                 
 
 * * *
@@ -56,7 +56,7 @@ SRC
 ### Models
 
     custom_CNN.py # DL model used as fingerprinter
-                feedforward.py # projection layer (NN architecture)
+    feedforward.py # projection layer (NN architecture)
                 
 
 ### Train
@@ -67,14 +67,14 @@ SRC
 ### Utils
 
     audio.py #Reads and preprocess the audio files.
-                callbacks.py # Used during training to track progress
-                dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
-                dataset.py # Custom dataset class compatible with our model training.
-                features.py # To transform raw audio into time-frequency representation.
-                losses.py # Loss metric defined used for training.
-                similarity.py # Similarity metric used to find similarity between embeddings during training.
-                main.py  #Integrates all modules.
-                demo.ipynb #For audio retrieval demo purposes.
+    callbacks.py # Used during training to track progress
+    dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
+    dataset.py # Custom dataset class compatible with our model training.
+    features.py # To transform raw audio into time-frequency representation.
+    losses.py # Loss metric defined used for training.
+    similarity.py # Similarity metric used to find similarity between embeddings during training.
+    main.py  #Integrates all modules.
+    demo.ipynb #For audio retrieval demo purposes.
                 
 
 * * *
@@ -89,15 +89,15 @@ Installation
     conda create -n PB python=3.7
                 
 
-      #Install specific versions of PyTorch and torch-vision with torch audio
-                  pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
-                  #Install PyTorch Lightning version 1.9.5:
-                  pip install pytorch-lightning==1.9.5
-                  #Install other libraries
-                  pip install natsort
-                  pip install scipy
-                  pip install matplotlib 
-                  pip install faiss
+    #Install specific versions of PyTorch and torch-vision with torch audio
+    pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+    #Install PyTorch Lightning version 1.9.5:
+    pip install pytorch-lightning==1.9.5
+    #Install other libraries
+    pip install natsort
+    pip install scipy
+    pip install matplotlib 
+    pip install faiss
                 
 
 * * *
