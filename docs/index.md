@@ -12,15 +12,15 @@ title: Home
   }
 
   h1 {
-    font-size: 2em; /* Adjust the font size for h1 headers */
+    font-size: 3em; /* Adjust the font size for h1 headers */
   }
 
   h2 {
-    font-size: 1.5em; /* Adjust the font size for h2 headers */
+    font-size: 2.5em; /* Adjust the font size for h2 headers */
   }
 
   p {
-    font-size: 18px; /* Adjust the font size for paragraphs */
+    font-size: 20px; /* Adjust the font size for paragraphs */
   }
 </style>
 
@@ -28,7 +28,7 @@ title: Home
 Audio-Search
 ============
 
-### Table of contents
+## Table of contents
 
 * * *
 
@@ -50,7 +50,7 @@ Audio-Search
 
 * * *
 
-**Requirements**
+## Requirements
 ------------
 
 ### Minimum
@@ -60,7 +60,7 @@ Audio-Search
 
 * * *
 
-**Config**
+## Config
 ------
 
     main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
@@ -71,7 +71,6 @@ Audio-Search
 * * *
 
 ## SRC
----
 
 * * *
 
@@ -101,7 +100,7 @@ Audio-Search
 
 * * *
 
-Installation
+## Installation
 ------------
 
 ### Install packages for the QbE system via the following commands:
@@ -124,7 +123,7 @@ Installation
 
 * * *
 
-Command Execution
+## Command Execution
 -----------------
 
 ### Training
