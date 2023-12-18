@@ -2,6 +2,12 @@
 layout: default
 title: Home
 ---
+<style>
+  body {
+    max-width: 1200px; /* Adjust the value based on your preference */
+    margin: 0 auto; /* Center the content */
+  }
+</style>
 
 Audio-Search
 ============
