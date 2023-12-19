@@ -56,18 +56,15 @@
     ├── search.yaml  # Used for parameters defined in /src/index/search.py.
 ├── src
     ├── index
-        ├──__init__.py
         ├──create_refdbase.py
         ├──search.py
     ├── model
-        ├──__init__.py
         ├──custom_CNN.py # DL model used as fingerprinter
         ├──feedforward.py # projection layer (NN architecture)
     ├── train
         ├──__init__.py
         ├──contrastive_learning.py # Pytorch Lightning module for training the model.
     ├── utils
-        ├──__init__.py
         ├──audio.py #Reads and preprocess the audio files.
         ├──callbacks.py # Used during training to track progress
         ├──dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
@@ -75,11 +72,8 @@
         ├──features.py # To transform raw audio into time-frequency representation.
         ├──losses.py # Loss metric defined used for training.
         ├──similarity.py # Similarity metric used to find similarity between embeddings during training.
-        ├── main.py #Integrates all modules
-        ├── tutorial #For audio retrieval demo purposes.
-├── docs
-    ├── index.md # documentation file
-├── README.md
+  ├── main.py #Integrates all modules
+  ├── tutorial #For audio retrieval demo purposes.
 ```
 </div>
 
