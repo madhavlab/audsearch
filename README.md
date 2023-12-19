@@ -29,16 +29,13 @@
 
 ## Installation
 ### Install packages for the QbE system via the following commands:
-#### Create a Conda environment named "PB" with Python 3.7:
+#### Create a Conda environment with Python 3.7:
    ```python
-   conda create -n PB python=3.7
+   conda create -n <env_name> python=3.7
 ```
  ```python
-   #Install specific versions of PyTorch and torch-vision with torch audio
    pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
-   #Install PyTorch Lightning version 1.9.5:
    pip install pytorch-lightning==1.9.5
-   #Install other libraries
    pip install natsort
    pip install scipy
    pip install matplotlib 
@@ -59,35 +56,15 @@
     ├── search.yaml  # Used for parameters defined in /src/index/search.py.
 ├── src
     ├── index
-        ├──__init__.py
         ├──create_refdbase.py
         ├──search.py
-        ├──__pycache__
-          ├──__init__.cpython-37
-          ├──create_refdbase.cpython-37
-          ├──search.cpython-37
     ├── model
-        ├──__init__.py
         ├──custom_CNN.py # DL model used as fingerprinter
         ├──feedforward.py # projection layer (NN architecture)
-        ├──__pycache__
-          ├──__init__.cpython-37
-          ├──__init__.cpython-311
-          ├──baseline.cpython-37
-          ├──custom_CNN.cpython-37
-          ├──custom_CNN.cpython-311
-          ├──feedforward.cpython-37
-          ├──feedforward.cpython-311
     ├── train
         ├──__init__.py
         ├──contrastive_learning.py # Pytorch Lightning module for training the model.
-        ├──__pycache__
-          ├──__init__.cpython-37
-          ├──__init__.cpython-311
-          ├──contrastive_learning.cpython-37
-          ├──contrastive_learning.cpython-37
     ├── utils
-        ├──__init__.py
         ├──audio.py #Reads and preprocess the audio files.
         ├──callbacks.py # Used during training to track progress
         ├──dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
@@ -95,33 +72,8 @@
         ├──features.py # To transform raw audio into time-frequency representation.
         ├──losses.py # Loss metric defined used for training.
         ├──similarity.py # Similarity metric used to find similarity between embeddings during training.
-        ├──__pycache__
-          ├──__init__.cpython-37
-          ├──__init__.cpython-311
-          ├──audio.cpython-37
-          ├──audio.cpython-311
-          ├──callbacks.cpython-37
-          ├──callbacks.cpython-311
-          ├──dataclass.cpython-37
-          ├──dataclass.cpython-311
-          ├──dataset.cpython-37
-          ├──dataset.cpython-311
-          ├──features.cpython-37
-          ├──features.cpython-311
-          ├──losses.cpython-37
-          ├──losses.cpython-311
-          ├──similarity.cpython-37
-          ├──similarity.cpython-37
-        ├── main.py #Integrates all modules
-        ├── tutorial #For audio retrieval demo purposes.
-├── data
-    ├── FMA_subset
-    ├── noises
-    ├── rirs
-    ├── last.ckpt
-├── docs
-    ├── index.md # documentation file
-├── README.md
+  ├── main.py #Integrates all modules
+  ├── tutorial #For audio retrieval demo purposes.
 ```
 </div>
 
