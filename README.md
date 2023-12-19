@@ -31,7 +31,7 @@
 ### Install packages for the QbE system via the following commands:
 #### Create a Conda environment named "PB" with Python 3.7:
    ```python
-   conda create -n PB python=3.7
+   conda create -n <env_name> python=3.7
 ```
  ```python
    pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
