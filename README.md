@@ -59,7 +59,7 @@
 
 ## Repository Structure
 
-```
+```python
 ├── config
     ├── create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase.
     ├── main.yaml # Contains all the important parameters of the system and is used for parameters defined in main.py. 
@@ -75,8 +75,8 @@
           ├──search.cpython-37
     ├── model
         ├──__init__.py
-        ├──custom_CNN.py
-        ├──feedforward.py
+        ├──custom_CNN.py # DL model used as fingerprinter
+        ├──feedforward.py # projection layer (NN architecture)
         ├──__pycache__
           ├──__init__.cpython-37
           ├──__init__.cpython-311
@@ -87,7 +87,7 @@
           ├──feedforward.cpython-311
     ├── train
         ├──__init__.py
-        ├──contrastive_learning.py
+        ├──contrastive_learning.py # Pytorch Lightning module for training the model.
         ├──__pycache__
           ├──__init__.cpython-37
           ├──__init__.cpython-311
@@ -95,13 +95,15 @@
           ├──contrastive_learning.cpython-37
     ├── utils
         ├──__init__.py
-        ├──audio.py
-        ├──callbacks.py
-        ├──dataclass.py
-        ├──dataset.py
-        ├──features.py
-        ├──losses.py
-        ├──similarity.py
+        ├──audio.py #Reads and preprocess the audio files.
+        ├──callbacks.py # Used during training to track progress
+        ├──dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
+        ├──dataset.py # Custom dataset class compatible with our model training.
+        ├──features.py # To transform raw audio into time-frequency representation.
+        ├──losses.py # Loss metric defined used for training.
+        ├──similarity.py # Similarity metric used to find similarity between embeddings during training.
+        ├── main.py #Integrates all modules
+        ├── tutorial #For audio retrieval demo purposes.
         ├──__pycache__
           ├──__init__.cpython-37
           ├──__init__.cpython-311
@@ -119,15 +121,13 @@
           ├──losses.cpython-311
           ├──similarity.cpython-37
           ├──similarity.cpython-37
-    ├── main.py
-    ├── tutorial
 ├── data
     ├── FMA_subset
     ├── noises
     ├── rirs
     ├── last.ckpt
 ├── docs
-    ├── index.md
+    ├── index.md # documentation file
 ├── README.md
 ```
 </div>
