@@ -72,7 +72,7 @@
         ├──features.py # To transform raw audio into time-frequency representation.
         ├──losses.py # Loss metric defined used for training.
         ├──similarity.py # Similarity metric used to find similarity between embeddings during training.
-    ├── main.py #Integrates all modules
+    ├── main.py # Main module to start training.
     ├── tutorial.ipynb #For audio retrieval demo purposes.
 ```
 </div>
