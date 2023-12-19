@@ -102,8 +102,6 @@
         ├──features.py # To transform raw audio into time-frequency representation.
         ├──losses.py # Loss metric defined used for training.
         ├──similarity.py # Similarity metric used to find similarity between embeddings during training.
-        ├── main.py #Integrates all modules
-        ├── tutorial #For audio retrieval demo purposes.
         ├──__pycache__
           ├──__init__.cpython-37
           ├──__init__.cpython-311
@@ -121,6 +119,8 @@
           ├──losses.cpython-311
           ├──similarity.cpython-37
           ├──similarity.cpython-37
+        ├── main.py #Integrates all modules
+        ├── tutorial #For audio retrieval demo purposes.
 ├── data
     ├── FMA_subset
     ├── noises
