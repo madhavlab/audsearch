@@ -115,7 +115,7 @@ Audio-Search
 2.  After updating the configuration file, execute the following command from the src/ directory: `python main.py --subdir <repository name> --config <main.yaml path> -d <PB directory path>`
 3.  This command will create a directory inside PB/checkpoints/ with the specified repository name.
 4.  If you need to resume training from a checkpoint, use the following command from the src/ directory: `python main.py --subdir <repository name> -c <checkpoint(*.ckpt) path> -d <PB directory path>`
-5.  Make sure to replace '<main.yaml path>' with the actual values.
+5.  Make sure to replace <repository name>, <main.yaml path>, and <PB directory path> with the actual values. 
 
 * * *
 
