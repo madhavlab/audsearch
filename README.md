@@ -61,9 +61,9 @@
 
 ```
 ├── config
-    ├── create_refdbase.yaml
-    ├── main.yaml
-    ├── search.yaml
+    ├── create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase.
+    ├── main.yaml # Contains all the important parameters of the system and is used for parameters defined in main.py. 
+    ├── search.yaml  # Used for parameters defined in /src/index/search.py.
 ├── src
     ├── index
         ├──__init__.py
