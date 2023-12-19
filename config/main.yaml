@@ -12,6 +12,7 @@ valid_clean:
  "/content/audsearch/data/FMA_subset": "mp3"
 valid_noise: ["/content/audsearch/data/noises", "wav"]
 valid_rir: ["/content/audsearch/data/rirs", "wav"]
+train_distort_probs: null
 
 #dataloader
 fs: 16000
