@@ -4,17 +4,10 @@
 
 ### Table of contents 
 ----------------------------------------------------------------------
-* [**System Requirments**](#requirements): Contains system requirements
+* [**System Requirments**](#requirements)
 * [**Installation**](#installation)
 * [**Repository Structure**](#repository-structure)
-* [**Config**](#config): Contains configuration files (.yaml)  
-* **SRC**: Contains all modules
-  * [**Models**](#models): To define DL models
-  * **Index**: To create a reference database of fingerprints and perform audio retrieval
-  * [**Train**](#train): To train the model
-  * [**Utils**](#utils): Helping modules used by modules in Index, Train. Also used by the main.py file
-* **main.py**: This is used for training the model
-* Command Execution
+* [**Command Execution**](#command-execution)
     * [For Training the model](#training)
     * [For creating a reference database](#creating-reference-database)
     * [For Audio retrieval](#audio-retrieval)
