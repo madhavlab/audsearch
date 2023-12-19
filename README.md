@@ -133,49 +133,7 @@
 </div>
 
 
---------------------------------------------------------------------------------------------------------------------------
-<div style="background-color: #e6f7ff; padding: 10px;">
-
-## Config
-```yaml
-main.yaml  # Used for parameters defined in main.py . This contains all the important parameters of the system.
-create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase. 
-search.yaml  # Used for parameters defined in /src/index/search.py. 
-```
-
-</div>
-
 --------------------------------------------------------------------------------------------
-## SRC                                                                       
-----------------------------------------------------------------------------------------
-<div style="background-color: #ccffcc; padding: 10px;">
-
-### Models
-```Python 
-custom_CNN.py # DL model used as fingerprinter
-feedforward.py # projection layer (NN architecture)
-```
-### Train
-```Python 
-contrastive_learning.py # Pytorch Lightning module for training the model.
-```
-### Utils
-```Python 
-audio.py #Reads and preprocess the audio files.
-callbacks.py # Used during training to track progress
-dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
-dataset.py # Custom dataset class compatible with our model training.
-features.py # To transform raw audio into time-frequency representation.
-losses.py # Loss metric defined used for training.
-similarity.py # Similarity metric used to find similarity between embeddings during training.
-main.py  #Integrates all modules.
-demo.ipynb #For audio retrieval demo purposes.
-```
-</div>
-
----------------------------------------------------------------------------------------------------------------------------
-
-
 ## Command Execution 
 ### Training
 1. To initiate training, update the `main.yaml` file, focusing on specifying paths for training/validation data and noise/RIR files. Ensure that the paths are correctly set.
