@@ -14,9 +14,9 @@
   * [**Utils**](#utils): Helping modules used by modules in Index, Train. Also used by the main.py file
 * **main.py**: This is used for training the model
 * Command Execution
-* [For Training the model](#training)
-* [For creating a reference database](#creating-reference-database)
-* [For Audio retrieval](#audio-retrieval)
+    * [For Training the model](#training)
+    * [For creating a reference database](#creating-reference-database)
+    * [For Audio retrieval](#audio-retrieval)
 * [**Dataset**](#dataset)
 </div>
 
