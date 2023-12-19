@@ -11,7 +11,7 @@
   * **Index**: To create a reference database of fingerprints and perform audio retrieval
   * [**Train**](#train): To train the model
   * [**Utils**](#utils): Helping modules used by modules in Index, Train. Also used by the main.py file
-* **main.py**: Integrates all the above modules. This is called for training the model
+* **main.py**: This is used for training the model
 * [**Installation**](#installation)
 * Command Execution
 * [For Training the model](#training)
@@ -31,7 +31,29 @@
 
 
 --------------------------------------------------------------------------------------------------------------------------
+<div style="background-color: #e6f7ff; padding: 10px;">
 
+## Installation
+### Install packages for the QbE system via the following commands:
+#### Create a Conda environment named "PB" with Python 3.7:
+   ```python
+   conda create -n PB python=3.7
+```
+ ```python
+   #Install specific versions of PyTorch and torch-vision with torch audio
+   pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+   #Install PyTorch Lightning version 1.9.5:
+   pip install pytorch-lightning==1.9.5
+   #Install other libraries
+   pip install natsort
+   pip install scipy
+   pip install matplotlib 
+   pip install faiss
+   pip install tensorboard
+  ```
+</div>
+
+------------------------------------------------------------------------------------------------------------------------------------
 <div style="background-color: #e6f7ff; padding: 10px;">
 
 ## Config
@@ -72,29 +94,7 @@ demo.ipynb #For audio retrieval demo purposes.
 </div>
 
 ---------------------------------------------------------------------------------------------------------------------------
-<div style="background-color: #e6f7ff; padding: 10px;">
 
-## Installation
-### Install packages for the QbE system via the following commands:
-#### Create a Conda environment named "PB" with Python 3.7:
-   ```python
-   conda create -n PB python=3.7
-```
- ```python
-   #Install specific versions of PyTorch and torch-vision with torch audio
-   pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
-   #Install PyTorch Lightning version 1.9.5:
-   pip install pytorch-lightning==1.9.5
-   #Install other libraries
-   pip install natsort
-   pip install scipy
-   pip install matplotlib 
-   pip install faiss
-   pip install tensorboard
-  ```
-</div>
-
-------------------------------------------------------------------------------------------------------------------------------------
 
 ## Command Execution 
 ### Training
