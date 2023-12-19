@@ -28,11 +28,12 @@
 <div style="background-color: #e6f7ff; padding: 10px;">
 
 ## Installation
-### Install packages for the QbE system via the following commands:
+
 #### Create a Conda environment with Python 3.7:
    ```python
    conda create -n <env_name> python=3.7
 ```
+#### Install packages for the QbE system via the following commands:
  ```python
    pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
    pip install pytorch-lightning==1.9.5
