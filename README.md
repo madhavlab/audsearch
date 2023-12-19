@@ -6,6 +6,7 @@
 ----------------------------------------------------------------------
 * [**System Requirments**](#requirements): Contains system requirements
 * [**Installation**](#installation)
+* [**Repository Structure**](#repository-structure)
 * [**Config**](#config): Contains configuration files (.yaml)  
 * **SRC**: Contains all modules
   * [**Models**](#models): To define DL models
@@ -54,6 +55,85 @@
 </div>
 
 ------------------------------------------------------------------------------------------------------------------------------------
+<div style="background-color: #e6f7ff; padding: 10px;">
+
+## Repository Structure
+
+```
+├── config
+    ├── create_refdbase.yaml
+    ├── main.yaml
+    ├── search.yaml
+├── src
+    ├── index
+        ├──__init__.py
+        ├──create_refdbase.py
+        ├──search.py
+        ├──__pycache__
+          ├──__init__.cpython-37
+          ├──create_refdbase.cpython-37
+          ├──search.cpython-37
+    ├── model
+        ├──__init__.py
+        ├──custom_CNN.py
+        ├──feedforward.py
+        ├──__pycache__
+          ├──__init__.cpython-37
+          ├──__init__.cpython-311
+          ├──baseline.cpython-37
+          ├──custom_CNN.cpython-37
+          ├──custom_CNN.cpython-311
+          ├──feedforward.cpython-37
+          ├──feedforward.cpython-311
+    ├── train
+        ├──__init__.py
+        ├──contrastive_learning.py
+        ├──__pycache__
+          ├──__init__.cpython-37
+          ├──__init__.cpython-311
+          ├──contrastive_learning.cpython-37
+          ├──contrastive_learning.cpython-37
+    ├── utils
+        ├──__init__.py
+        ├──audio.py
+        ├──callbacks.py
+        ├──dataclass.py
+        ├──dataset.py
+        ├──features.py
+        ├──losses.py
+        ├──similarity.py
+        ├──__pycache__
+          ├──__init__.cpython-37
+          ├──__init__.cpython-311
+          ├──audio.cpython-37
+          ├──audio.cpython-311
+          ├──callbacks.cpython-37
+          ├──callbacks.cpython-311
+          ├──dataclass.cpython-37
+          ├──dataclass.cpython-311
+          ├──dataset.cpython-37
+          ├──dataset.cpython-311
+          ├──features.cpython-37
+          ├──features.cpython-311
+          ├──losses.cpython-37
+          ├──losses.cpython-311
+          ├──similarity.cpython-37
+          ├──similarity.cpython-37
+    ├── main.py
+    ├── tutorial
+├── data
+    ├── FMA_subset
+    ├── noises
+    ├── rirs
+    ├── last.ckpt
+├── docs
+    ├── index.md
+├── README.md
+```
+</div>
+
+
+--------------------------------------------------------------------------------------------------------------------------
 <div style="background-color: #e6f7ff; padding: 10px;">
 
 ## Config
