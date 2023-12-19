@@ -63,7 +63,6 @@
         ├──custom_CNN.py # DL model used as fingerprinter
         ├──feedforward.py # projection layer (NN architecture)
     ├── train
-        ├──__init__.py
         ├──contrastive_learning.py # Pytorch Lightning module for training the model.
     ├── utils
         ├──audio.py #Reads and preprocess the audio files.
