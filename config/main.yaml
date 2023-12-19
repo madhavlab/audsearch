@@ -4,14 +4,14 @@ seed: 1
 #dataset
 train_clean: 
  "/content/audsearch/data/FMA_subset": "wav"
-train_noise: ["/content/audsearch/data/FMA_subset/noises", "wav"] 
-train_rir: ["/content/audsearch/data/FMA_subset/rirs", "wav"]
+train_noise: ["/content/audsearch/data/noises", "wav"] 
+train_rir: ["/content/audsearch/data/rirs", "wav"]
 train_distort_probs: null
 
 valid_clean:
  "/content/audsearch/data/FMA_subset": "wav"
-valid_noise: ["/content/audsearch/data/FMA_subset/noises", "wav"]
-valid_rir: ["/content/audsearch/data/FMA_subset/rirs", "wav"]
+valid_noise: ["/content/audsearch/data/noises", "wav"]
+valid_rir: ["/content/audsearch/data/rirs", "wav"]
 
 #dataloader
 fs: 16000
