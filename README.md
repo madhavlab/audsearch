@@ -6,7 +6,6 @@
 ----------------------------------------------------------------------
 * [**System Requirments**](#requirements): Contains system requirements
 * [**Config**](#config): Contains configuration files (.yaml)  
-* **Checkpoints**: To store model weights during training
 * **SRC**: Contains all modules
   * [**Models**](#models): To define DL models
   * **Index**: To create a reference database of fingerprints and perform audio retrieval
