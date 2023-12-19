@@ -29,7 +29,7 @@
 
 ## Installation
 ### Install packages for the QbE system via the following commands:
-#### Create a Conda environment named "PB" with Python 3.7:
+#### Create a Conda environment with Python 3.7:
    ```python
    conda create -n <env_name> python=3.7
 ```
