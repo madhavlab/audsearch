@@ -78,28 +78,28 @@ Audio-Search
 
 ```python
 ├── config
-    ├── create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase.
-    ├── main.yaml # Contains all the important parameters of the system and is used for parameters defined in main.py. 
-    ├── search.yaml  # Used for parameters defined in /src/index/search.py.
+│   ├── create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase.
+│   ├── main.yaml # Contains all the important parameters of the system and is used for parameters defined in main.py. 
+│   └── search.yaml  # Used for parameters defined in /src/index/search.py.
 ├── src
-    ├── index
-        ├──create_refdbase.py
-        ├──search.py
-    ├── model
-        ├──custom_CNN.py # DL model used as fingerprinter
-        ├──feedforward.py # projection layer (NN architecture)
-    ├── train
-        ├──contrastive_learning.py # Pytorch Lightning module for training the model.
-    ├── utils
-        ├──audio.py #Reads and preprocess the audio files.
-        ├──callbacks.py # Used during training to track progress
-        ├──dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
-        ├──dataset.py # Custom dataset class compatible with our model training.
-        ├──features.py # To transform raw audio into time-frequency representation.
-        ├──losses.py # Loss metric defined used for training.
-        ├──similarity.py # Similarity metric used to find similarity between embeddings during training.
-    ├── main.py # Main module to start training.
-    ├── tutorial.ipynb #For audio retrieval demo purposes.
+│   ├── index
+│   │   ├──create_refdbase.py
+│   │   └──search.py
+│   ├── model
+│   │   ├──custom_CNN.py # DL model used as fingerprinter
+│   │   └──feedforward.py # projection layer (NN architecture)
+│   ├── train
+│   │   └──contrastive_learning.py # Pytorch Lightning module for training the model.
+│   ├── utils
+│   │   ├──audio.py #Reads and preprocess the audio files.
+│   │   ├──callbacks.py # Used during training to track progress
+│   │   ├──dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
+│   │   ├──dataset.py # Custom dataset class compatible with our model training.
+│   │   ├──features.py # To transform raw audio into time-frequency representation.
+│   │   ├──losses.py # Loss metric defined used for training.
+│   │   └──similarity.py # Similarity metric used to find similarity between embeddings during training.
+│   ├── main.py # Main module to start training.
+│   └──tutorial.ipynb #For audio retrieval demo purposes.
 ```
 ***
 
