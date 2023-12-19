@@ -104,7 +104,6 @@
    
 ------------------------------------------------------------------------------------------------------------------------------
 ## Dataset
-You can access the dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium).
-It is a free Music Archive with a Large number of Genres for Music Analysis
+You can access the Free Music Archive (FMA) dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium).
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
