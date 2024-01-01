@@ -12,6 +12,7 @@
     * [For creating a reference database](#creating-reference-database)
     * [For Audio retrieval](#audio-retrieval)
 * [**Dataset**](#dataset)
+* [**Reference**](#reference)
 </div>
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -111,7 +112,6 @@ You can access the Free Music Archive (FMA) dataset on Kaggle [here](https://www
 
 1. A. Singh, K. Demuynck, and V. Arora, "Simultaneously Learning Robust Audio Embeddings and Balanced Hash Codes for Query-by-Example," *ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, Rhodes Island, Greece, 2023, pp. 1-5, doi: [10.1109/ICASSP49357.2023.10096103](https://doi.org/10.1109/ICASSP49357.2023.10096103).
 
-2. "Attention-based Audio Embeddings for Query-by-Example" by [Author Names], [Year]
-
-[![Paper](https://img.shields.io/badge/Paper-arXiv-informational?style=flat&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2210.08624.pdf)
+2. "Attention-based Audio Embeddings for Query-by-Example"
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-informational?style=flat&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2210.08624.pdf)
 
