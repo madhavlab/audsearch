@@ -107,7 +107,7 @@
 ------------------------------------------------------------------------------------------------------------------------------
 ## Dataset and model weights
 You can access the Free Music Archive (FMA) dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium).
-You can access the model weight from [here](https://drive.google.com/file/d/17pUMR2n8tQlXH6jFBZkownzR-3t6JSNE/view?usp=drive_link). 
+and model weights from [here](https://drive.google.com/file/d/17pUMR2n8tQlXH6jFBZkownzR-3t6JSNE/view?usp=drive_link). 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Tutorial slides and recording
