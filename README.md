@@ -11,9 +11,9 @@
     * [For Training the model](#training)
     * [For creating a reference database](#creating-reference-database)
     * [For Audio retrieval](#audio-retrieval)
-* [**Dataset**](#dataset)
+* [**Dataset and model weights**](#dataset-and-model-weights)
 * [**Tutorial Slides and Recording**](#tutorial-slides-and-recording) 
-* [**References**](#reference)
+* [**References**](#references)
 </div>
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -105,12 +105,12 @@
 5. This command will initiate the audio retrieval process based on the configured settings for a demonstration.
    
 ------------------------------------------------------------------------------------------------------------------------------
-## Dataset
+## Dataset and model weights
 You can access the Free Music Archive (FMA) dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium).
-
+You can access the model weight from [here](https://drive.google.com/file/d/17pUMR2n8tQlXH6jFBZkownzR-3t6JSNE/view?usp=drive_link). 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Tutorial slides and recording
-[Link to Presentation](https://docs.google.com/presentation/d/1tR92Cq3baK_xeE2Uj1s1IPlYlRcN5xMv_spFGcgH8Ys/edit#slide=id.p)
+[Tutorial slides](https://docs.google.com/presentation/d/1tR92Cq3baK_xeE2Uj1s1IPlYlRcN5xMv_spFGcgH8Ys/edit#slide=id.p)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## References
