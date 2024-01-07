@@ -113,6 +113,8 @@ and model weights from [here](https://drive.google.com/file/d/17pUMR2n8tQlXH6jFB
 ## Tutorial slides and recording
 [Tutorial slides](https://docs.google.com/presentation/d/1tR92Cq3baK_xeE2Uj1s1IPlYlRcN5xMv_spFGcgH8Ys/edit#slide=id.p)
 
+[Tutorial video](https://iitk-my.sharepoint.com/:f:/g/personal/params21_iitk_ac_in/EqL7zmsX4rpCprdJV9IWtAABejBCiKhwryT9hqQn-zAp6g?e=r7hqvR)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## References
 
