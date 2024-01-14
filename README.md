@@ -84,11 +84,10 @@
 ## Command Execution 
 ### Training
 1. To initiate training, update the `main.yaml` file, focusing on specifying paths for training/validation data and noise/RIR files. Ensure that the paths are correctly set.
-2. After updating the configuration file, execute the following command from the src/ directory: `python main.py --subdir <repository name>` 
-3. This command will create a directory inside PB/checkpoints/ with the specified repository name.
-4. If you need to resume training from a checkpoint, use the following command from the src/ directory: `python main.py --subdir <repository name> -c <checkpoint(*.ckpt)
+2. After updating the configuration file, execute the following command from the src/ directory: `python main.py --subdir <repository name>`. This command will create a directory inside your parent working directory at './checkpoints/<repository name>`.
+3. If you need to resume training from a checkpoint, use the following command from the src/ directory: `python main.py --subdir <repository name> -c <checkpoint(*.ckpt)
    path> -d <PB directory path>`
-5. Make sure to replace <repository name>, <main.yaml path>, and <PB directory path> with the actual values. 
+4. Make sure to replace <repository name>, <main.yaml path>, and <PB directory path> with the actual values. 
 ---------------------------------------------------------------------------------------------------------------------
 ### Creating reference Database
 1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
