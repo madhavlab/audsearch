@@ -91,7 +91,7 @@
 ---------------------------------------------------------------------------------------------------------------------
 ### Creating reference Database
 1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
-2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py --config <create_refdbase.yaml path>`
+2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py`
 3. Ensure that you replace `<create_refdbase.yaml path>` with the actual path to your configuration file.
 4. This command will initiate creating a reference database based on the specified configuration.
 --------------------------------------------------------------------------------------------------------------------
