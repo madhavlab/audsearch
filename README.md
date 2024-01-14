@@ -42,7 +42,7 @@
    pip install natsort
    pip install scipy
    pip install matplotlib 
-   pip install faiss
+   pip install faiss-cpu --no-cache
    pip install tensorboard
   ```
 </div>
