@@ -92,7 +92,7 @@
 1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py`
 3. To update the existing index with new audio files, update the following keys in `create_refdbase.yaml`:
-- set `append_db` to 'True' in the `create_refdbase.yaml` file.
+- set `append_db` to 'True' 
 - set `load_index_path` to a path of existing index file
 --------------------------------------------------------------------------------------------------------------------
 ### Audio Retrieval
