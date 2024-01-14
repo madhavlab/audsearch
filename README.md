@@ -91,8 +91,8 @@
 ### Creating reference Database
 1. To create a reference database, first, update the `create_refdbase.yaml` file, focusing on specifying the path corresponding to the reference audio files.
 2. After updating the configuration file, execute the following command from the `index/` directory: `python create_refdbase.py`
-3. Ensure that you replace `<create_refdbase.yaml path>` with the actual path to your configuration file.
-4. This command will initiate creating a reference database based on the specified configuration.
+3. To update the existing index with new audio files:
+-set <append_db> to 'True' in the `create_refdbase.yaml` file. 
 --------------------------------------------------------------------------------------------------------------------
 ### Audio Retrieval
 1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, please make sure that you specify the paths for the fingerprints database, metadata, and model weights.
