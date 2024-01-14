@@ -55,19 +55,19 @@
 ```python
 ├── config
 │   ├── create_refdbase.yaml # Used for parameters defined in /src/index/create_refdbase.
-│   ├── main.yaml # Contains all the important parameters of the system and is used for parameters defined in main.py. 
+│   ├── main.yaml # Used for parameters defined in main.py. It contains parameters for model training. 
 │   └── search.yaml  # Used for parameters defined in /src/index/search.py.
 ├── src
 │   ├── index
-│   │   ├──create_refdbase.py
-│   │   └──search.py
+│   │   ├──create_refdbase.py # creates fingerprints database and builds an index. 
+│   │   └──search.py # performs search and also used for demonstration purposes.
 │   ├── model
-│   │   ├──custom_CNN.py # DL model used as fingerprinter
-│   │   └──feedforward.py # projection layer (NN architecture)
+│   │   ├──custom_CNN.py # model
+│   │   └──feedforward.py # projection layer
 │   ├── train
 │   │   └──contrastive_learning.py # Pytorch Lightning module for training the model.
 │   ├── utils
-│   │   ├──audio.py #Reads and preprocess the audio files.
+│   │   ├──audio.py # Reads and preprocess the audio files.
 │   │   ├──callbacks.py # Used during training to track progress
 │   │   ├──dataclass.py # Custom datatype to store reference database. Helps in fast appending to numpy array.
 │   │   ├──dataset.py # Custom dataset class compatible with our model training.
@@ -75,8 +75,7 @@
 │   │   ├──losses.py # Loss metric defined used for training.
 │   │   └──similarity.py # Similarity metric used to find similarity between embeddings during training.
 │   ├── main.py # Main module to start training.
-│   └──tutorial.ipynb #For audio retrieval demo purposes.
-```
+│   └──tutorial.ipynb #For audio retrieval demo purposes
 </div>
 
 
