@@ -97,8 +97,8 @@
 --------------------------------------------------------------------------------------------------------------------
 ### Audio Retrieval
 1. To perform audio retrieval, start by updating the `search.yaml file`. Specifically, please make sure that you specify the paths for the fingerprints database, metadata, and model weights.
-2. After updating the configuration file, execute the following command from the `index/` directory: `python search.py --config <search.yaml path>`
-3. In this demonstration, the command will perform audio retrieval for 10 noisy query files, each with a length of 5 seconds.
+2. After updating the configuration file, execute the following command from the `index/` directory: `python search.py` to run the search demonstration.
+3. The demonstration shows audio retrieval for 10 noisy query files, each with a length of 5 seconds.
 4. Make sure to replace `<search.yaml path>` with the actual path to your configuration file.
 5. This command will initiate the audio retrieval process based on the configured settings for a demonstration.
    
