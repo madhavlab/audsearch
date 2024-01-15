@@ -90,9 +90,6 @@
 3. The demonstration shows audio retrieval for 10 noisy query files, each with a length of 5 seconds.
 4. Make sure to replace `<search.yaml path>` with the actual path to your configuration file.
 5. This command will initiate the audio retrieval process based on the configured settings for a demonstration.
-   
-------------------------------------------------------------------------------------------------------------------------------
-## Dataset and model weights
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Tutorial slides and recording
