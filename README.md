@@ -92,6 +92,13 @@
 5. This command will initiate the audio retrieval process based on the configured settings for a demonstration.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Dataset and model weights
+You can access the Free Music Archive (FMA) dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium).
+and model weights from [here](https://drive.google.com/file/d/17pUMR2n8tQlXH6jFBZkownzR-3t6JSNE/view?usp=drive_link). 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Tutorial slides and recording
 [Tutorial slides](https://docs.google.com/presentation/d/1tR92Cq3baK_xeE2Uj1s1IPlYlRcN5xMv_spFGcgH8Ys/edit#slide=id.p)
 
