@@ -65,6 +65,7 @@
 │   │   ├──losses.py # Loss metric defined used for training.
 │   │   └──similarity.py # Similarity metric used to find similarity between embeddings during training.
 │   ├── main.py # Main module to start training.
+|   ├── tutorial.ipynb
 ```
 </div>
 
