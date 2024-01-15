@@ -16,16 +16,6 @@
 * [**References**](#references)
 </div>
 
----------------------------------------------------------------------------------------------------------------------------
-<div style="background-color: #e6f7ff; padding: 10px;">
-
-## Requirements
-### Minimum
-* NVIDIA GPU with CUDA 10+
-* 25 GB of free SSD space for mini-dataset experiments
-</div>
-
-
 --------------------------------------------------------------------------------------------------------------------------
 <div style="background-color: #e6f7ff; padding: 10px;">
 
@@ -75,7 +65,7 @@
 │   │   ├──losses.py # Loss metric defined used for training.
 │   │   └──similarity.py # Similarity metric used to find similarity between embeddings during training.
 │   ├── main.py # Main module to start training.
-│   └──tutorial.ipynb #For audio retrieval demo purposes
+```
 </div>
 
 
@@ -103,8 +93,6 @@
    
 ------------------------------------------------------------------------------------------------------------------------------
 ## Dataset and model weights
-You can access the Free Music Archive (FMA) dataset on Kaggle [here](https://www.kaggle.com/datasets/imsparsh/fma-free-music-archive-small-medium?select=fma_medium).
-and model weights from [here](https://drive.google.com/file/d/17pUMR2n8tQlXH6jFBZkownzR-3t6JSNE/view?usp=drive_link). 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Tutorial slides and recording
@@ -120,3 +108,4 @@ and model weights from [here](https://drive.google.com/file/d/17pUMR2n8tQlXH6jFB
   [![Paper](https://img.shields.io/badge/Paper-ISMIR%202022-informational?style=flat&logoColor=white)](https://archives.ismir.net/ismir2022/paper/000005.pdf)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
